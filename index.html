@@ -720,6 +720,14 @@ bitcoiniidev
         background: var(--orange);
         box-shadow: 0 0 0 2px rgba(247, 147, 26, 0.3);
     }
+    .full-text {
+        display: none;
+    }
+    
+    .mobile-text {
+        display: inline;
+    }
+
 
     /* Merged Media Queries */
     @media (min-width: 768px) {
@@ -744,6 +752,13 @@ bitcoiniidev
 
         .feature-media {
             flex: 0 0 auto;
+        }
+        .full-text {
+            display: inline;
+        }
+    
+        .mobile-text {
+            display: none;
         }
     }
 
@@ -1165,16 +1180,20 @@ bitcoiniidev
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>Bitcoin II - Because Bitcoin deserved a proper reset. © 2025</p>
+                <p>Bitcoin II - Because Bitcoin deserved a proper reset. © 2025 All rights reserved</p>
 
-                <a
-                    href="#"
-                    class="creator-badge"
-                    title="Built by a BC2 community member"
-                >
+                <a href="#" class="creator-badge" title="Built by a BC2 community member">
                     <span class="creator-dot"></span>
-                    Website made by BC2 Community Member <strong>@kwzo</strong>
+                
+                    <span class="full-text">
+                        Website made by <strong>BC2 Community Member</strong> <strong>@kwzo</strong>
+                    </span>
+                
+                    <span class="mobile-text">
+                        <strong>BC2 Community Member</strong> <strong>@kwzo</strong>
+                    </span>
                 </a>
+
             </div>
         </div>
     </footer>
